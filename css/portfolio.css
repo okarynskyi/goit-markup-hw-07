@@ -82,8 +82,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: #188ce8;
 }
 
@@ -135,8 +134,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list-link:hover, .nav-list-link:focus {
   color: var(--accent-color);
 }
 
@@ -156,23 +154,6 @@ img {
   border-radius: 2px;
 }
 
-.contact-link,
-.contact-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-link:hover,
-.contact-link:focus,
-.contact-tel:hover,
-.contact-tel:focus {
-  color: var(--accent-color);
-}
-
 .contact-link {
   margin-left: auto;
   margin-right: 50px;
@@ -183,8 +164,23 @@ img {
   fill: var(--secondary-text-color);
 }
 
-.contact-link:hover .contact-icon,
-.contact-link:focus .contact-icon,
+.contact-link,
+.contact-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover, .contact-link:focus,
+.contact-tel:hover,
+.contact-tel:focus {
+  color: var(--accent-color);
+}
+
+.contact-link:hover .contact-icon, .contact-link:focus .contact-icon,
 .contact-tel:hover .contact-icon,
 .contact-tel:focus .contact-icon {
   fill: var(--accent-color);
@@ -218,8 +214,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   color: #ffffff;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
@@ -252,8 +247,7 @@ img {
   display: block;
 }
 
-.tab-link:hover,
-.tab-link:focus {
+.tab-link:hover, .tab-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -273,6 +267,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.tab-link:hover .tab-overlay,
+.tab-link:focus .tab-overlay {
+  transform: translateY(0);
+}
+
 .tab-actions {
   position: absolute;
   width: 322px;
@@ -284,11 +283,6 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-
-.tab-link:hover .tab-overlay,
-.tab-link:focus .tab-overlay {
-  transform: translateY(0);
 }
 
 .tab-wrapper {
@@ -394,13 +388,12 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-footer-icon {
-  fill: #ffffff;
+.social-footer-link:hover, .social-footer-link:focus {
+  background-color: var(--accent-color);
 }
 
-.social-footer-link:hover,
-.social-footer-link:focus {
-  background-color: var(--accent-color);
+.social-footer-icon {
+  fill: #ffffff;
 }
 
 .mailing {
